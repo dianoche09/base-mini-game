@@ -7,9 +7,9 @@ const ROOT_URL = "https://base-mini-game.vercel.app";
  */
 export const minikitConfig = {
   accountAssociation: {
-    header: "",
-    payload: "",
-    signature: ""
+    header: "eyJmaWQiOjIzNTY3MSwidHlwZSI6ImF1dGgiLCJrZXkiOiIweEU5RGQ4QWVBZkEwMDNjNUNkY2MwZGY2N0E4N2NFQjU0NDliYjk0MjgifQ",
+    payload: "eyJkb21haW4iOiJiYXNlLW1pbmktZ2FtZS52ZXJjZWwuYXBwIn0",
+    signature: "cTCEbdnjLaUyBvVO0JWtwQoLy2jvd9q0kOOLEJ6Dln8H51jUOo8NFNfpWKwVhDU2wDco2YGQbsc/SO+/LRZs+Rw="
   },
   miniapp: {
     version: "1",
