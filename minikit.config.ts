@@ -1,6 +1,4 @@
-const ROOT_URL =
-  process.env.NEXT_PUBLIC_URL ||
-  (process.env.VERCEL_PROJECT_PRODUCTION_URL ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` : 'http://localhost:3000');
+const ROOT_URL = "https://base-mini-game.vercel.app";
 
 /**
  * MiniApp configuration object. Must follow the Farcaster MiniApp specification.
@@ -15,9 +13,9 @@ export const minikitConfig = {
   },
   miniapp: {
     version: "1",
-    name: "Cubey", 
-    subtitle: "Your AI Ad Companion", 
-    description: "Ads",
+    name: "Base Jump",
+    subtitle: "Infinite Vertical Jumper",
+    description: "Jump as high as you can and compete on the leaderboard!",
     screenshotUrls: [`${ROOT_URL}/screenshot-portrait.png`],
     iconUrl: `${ROOT_URL}/blue-icon.png`,
     splashImageUrl: `${ROOT_URL}/blue-hero.png`,
@@ -25,11 +23,11 @@ export const minikitConfig = {
     homeUrl: ROOT_URL,
     webhookUrl: `${ROOT_URL}/api/webhook`,
     primaryCategory: "social",
-    tags: ["marketing", "ads", "quickstart", "waitlist"],
-    heroImageUrl: `${ROOT_URL}/blue-hero.png`, 
-    tagline: "",
-    ogTitle: "",
-    ogDescription: "",
+    tags: ["game", "jumper", "base", "fun"],
+    heroImageUrl: `${ROOT_URL}/blue-hero.png`,
+    tagline: "Jump to the moon on Base!",
+    ogTitle: "Base Jump Game",
+    ogDescription: "Can you beat the high score?",
     ogImageUrl: `${ROOT_URL}/blue-hero.png`,
   },
 } as const;
